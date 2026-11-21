@@ -2,7 +2,7 @@ services:
   - type: web
     name: xray-node
     env: docker
-    dockerFilePath: deploy/Dockerfile
+    dockerfilePath: deploy/Dockerfile
     repo: https://github.com/mercy-babya/xray-node.git
     branch: main
     plan: free
