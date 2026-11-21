@@ -8,7 +8,13 @@
         "clients": [{ "id": "{{UUID}}" }],
         "decryption": "none"
       },
-      "streamSettings": { "network": "tcp", "security": "none" }
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/xray"
+        },
+        "security": "none"
+      }
     }
   ],
   "outbounds": [{ "protocol": "freedom", "settings": {} }]
