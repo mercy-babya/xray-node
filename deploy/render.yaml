@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: xray-node
+    env: docker
+    dockerFilePath: deploy/Dockerfile
+    repo: https://github.com/mercy-babya/xray-node.git
+    branch: main
+    plan: free
+    region: frankfurt
+    envVars:
+      - key: UUID
+        sync: false
+        value: 0c41b6ff-2a96-4f3b-b4b5-4c713fb1505b
+      - key: PORT
+        sync: false
+        value: 8080
